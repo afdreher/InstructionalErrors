@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ConstraintBasedRotation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCr-yI-prt">
+                                <rect key="frame" x="220" y="415" width="380" height="350"/>
+                                <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="Y4P-fU-rjD"/>
+                                    <constraint firstAttribute="width" constant="380" id="klU-i0-zO1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Luy-Lh-KTO">
+                                <rect key="frame" x="285" y="415" width="250" height="350"/>
+                                <viewLayoutGuide key="safeArea" id="mXF-AM-veS"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="2Qh-PW-W3W"/>
+                                    <constraint firstAttribute="width" constant="250" id="O1D-EX-EU3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Luy-Lh-KTO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MEC-Aj-0Fm"/>
+                            <constraint firstItem="Luy-Lh-KTO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e0Z-32-Zop"/>
+                            <constraint firstItem="SCr-yI-prt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="leI-1p-kkp"/>
+                            <constraint firstItem="SCr-yI-prt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uLo-Ei-x0w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dynamicLogo" destination="SCr-yI-prt" id="C6v-vK-hYp"/>
+                        <outlet property="staticLogo" destination="Luy-Lh-KTO" id="OHv-fs-NBO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9.5121951219512191" y="8.6440677966101696"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
