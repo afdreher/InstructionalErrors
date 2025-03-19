@@ -1,5 +1,5 @@
 //
-//  LLamaSplashScreenController.swift
+//  LLama8BSplashScreenController.swift
 //  LLM-Llama8B
 //
 //  Created using Ollma and Llama 3.2 8B on 2/20/25.
