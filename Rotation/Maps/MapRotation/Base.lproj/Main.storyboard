@@ -23,10 +23,10 @@
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="twd-Zr-vVB">
-                                <rect key="frame" x="101" y="75" width="191" height="32"/>
+                                <rect key="frame" x="93" y="134" width="207" height="32"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <segments>
-                                    <segment title="Simultanous"/>
+                                    <segment title="Simultaneous"/>
                                     <segment title="Sequential"/>
                                 </segments>
                                 <connections>
