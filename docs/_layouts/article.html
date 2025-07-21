@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="attribution">
+    {% if page.author %}
+        <p class="author">{{ page.author }}</p>
+    {% endif %}
+    {% if page.published %}
+        <p class="published"><span>Published: </span>{{ page.published }}</p>
+    {% endif %}
+    {% if page.updated %}
+        <p class="updated"><span>Updated: </span>{{page.updated }}</p>
+    {% endif %}
+</div>
+
+{{ content }}

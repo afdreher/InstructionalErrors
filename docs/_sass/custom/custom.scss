@@ -1,0 +1,21 @@
+
+.image-caption {
+    font-size: .8rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.attribution {
+    p, div {
+        margin: 0
+    } 
+    .author {
+        font-weight: 700;
+    }
+    .published, .updated {
+        span {
+            font-style: italic;
+        }
+        font-size: 0.8rem;
+    }
+}
