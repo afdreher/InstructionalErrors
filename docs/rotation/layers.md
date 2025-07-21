@@ -22,7 +22,7 @@ I want to premise that this is a harmless error, but it is an example of this er
 What is this error? Upon launching the iOS application, users are greeted with a static “N” logo, which subsequently animates to reveal the full “Netflix” branding before transitioning to the main menu screen. Yet, a fun glitch occurs when an iPad is rotated immediately after launch (see [Figure 1](#figure-1), below).
 
 <a id='figure-1'></a>
-![netflix-launch-split-portrait](/assets/images/layers/netflix_01_small.jpg "Launching the Netflix app in protrait") ![netflix-launch-split-rotating](/assets/images/layers/netflix_02_small.jpg "Netflix app mid rotation") ![netflix-launch-split-landscape](/assets/images/layers/netflix_03_small.jpg "Netflix app demonstrating the split layer issue")
+![netflix-launch-split-portrait]({{ site.baseurl }}/assets/images/layers/netflix_01_small.jpg "Launching the Netflix app in protrait") ![netflix-launch-split-rotating]({{ site.baseurl }}/assets/images/layers/netflix_02_small.jpg "Netflix app mid rotation") ![netflix-launch-split-landscape]({{ site.baseurl }}/assets/images/layers/netflix_03_small.jpg "Netflix app demonstrating the split layer issue")
 
 {: .image-caption}
   Figure 1. Example frames taken from the Netflix iOS application for iPad captured in late August 2024. This glitch, while not new, persists in the latest version, 16.51.0 (20).
@@ -35,7 +35,7 @@ When the iPad is rotated, the static “N” and dynamic “Netflix” split apa
 Anthropic’s Claude app has a slew of inconsistencies and UX glitches -- enough for a decent case study. This might be considered somewhat ironic given the push for automated coding, but for now, I will focus solely on one due to rotation.
 
 <a id='figure-2'></a>
-![claude-rotation-start](/assets/images/layers/claude_01_small.jpg "Claude starting from the landscape orientation") ![claude-rotation-step-2](/assets/images/layers/claude_02_small.jpg "Claude showing an issue with the sheet size") ![claude-rotation-step-3](/assets/images/layers/claude_03_small.jpg "Claude showing the wrong layer order") ![claude-rotation-step-4](/assets/images/layers/claude_04_small.jpg "Claude showing the avatar out of step with the welcome text") ![claude-rotation-end-portrait](/assets/images/layers/claude_05_small.jpg "Claude finishing the rotation where the layers are still separated")
+![claude-rotation-start]({{ site.baseurl }}/assets/images/layers/claude_01_small.jpg "Claude starting from the landscape orientation") ![claude-rotation-step-2]({{ site.baseurl }}/assets/images/layers/claude_02_small.jpg "Claude showing an issue with the sheet size") ![claude-rotation-step-3]({{ site.baseurl }}/assets/images/layers/claude_03_small.jpg "Claude showing the wrong layer order") ![claude-rotation-step-4]({{ site.baseurl }}/assets/images/layers/claude_04_small.jpg "Claude showing the avatar out of step with the welcome text") ![claude-rotation-end-portrait]({{ site.baseurl }}/assets/images/layers/claude_05_small.jpg "Claude finishing the rotation where the layers are still separated")
 
 {: .image-caption}
 Figure 2. Example frames taken in February 2025 while rotating the Claude app [1.250127.0 (12938027910)] from landscape to portrait
