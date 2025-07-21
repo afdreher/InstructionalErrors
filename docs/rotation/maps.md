@@ -18,7 +18,7 @@ Map apps are such an appealing case study because their primary purpose is to or
 
 <a id='figure-1'></a> 
 <video width="500" height="281" controls>
-  <source src="/assets/images/maps/apple_maps_portrait_to_landscape_ferry_building.mp4" type="video/mp4">
+  <source src="{{ site.baseurl }}/assets/images/maps/apple_maps_portrait_to_landscape_ferry_building.mp4" type="video/mp4">
 </video>
 
 {: .image-caption}
@@ -31,7 +31,7 @@ It is difficult to show in isolated frames, but the issue with the Apple Maps an
 
 <a id='figure-2'></a> 
 <video width="500" height="281" controls>
-  <source src="/assets/images/maps/google_maps_portrait_to_landscape_ferry_building.mp4" type="video/mp4">
+  <source src="{{ site.baseurl }}/assets/images/maps/google_maps_portrait_to_landscape_ferry_building.mp4" type="video/mp4">
 </video>
 
 {: .image-caption}
@@ -40,7 +40,7 @@ It is difficult to show in isolated frames, but the issue with the Apple Maps an
 For the most part, the rotation is as one would expect. However, one can notice a momentary flash during the rotation. This flash occurs because the background color for the view hosting the map images is set to white and the map is resized / redrawn immediately when the rotation begins rather than either computing the maximum bounds or deferring the resize until the rotation completes. Two frames captured mid rotation ([Figure 3](#figure-3)) show the effect.
 
 <a id='figure-3'></a>
-![google-start-rotation](/assets/images/maps/google_start_rotation_small.jpg "Flash from white background mid rotation")![google-mid-rotation](/assets/images/maps/google_mid_rotation_small.jpg "Flash from white background mid rotation")
+![google-start-rotation]({{ site.baseurl }}/assets/images/maps/google_start_rotation_small.jpg "Flash from white background mid rotation")![google-mid-rotation]({{ site.baseurl }}/assets/images/maps/google_mid_rotation_small.jpg "Flash from white background mid rotation")
 
 {: .image-caption}
 Figure 3. Example frames captured mid rotation showing the white background and eager resizing of the map view.
